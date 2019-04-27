@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.2.2)
 
-project(decimalToBinary)
+project(operations)
 
 enable_testing()
 
@@ -14,10 +14,10 @@ include_directories(./inc)
 
 file(GLOB SOURCES "main.cpp" "./src/*.cpp")
 
-add_executable(decimalToBinary ${SOURCES})
+add_executable(operations ${SOURCES})
 
 add_subdirectory(tests)
 
-add_custom_target(run   COMMAND decimalToBinary
-                        DEPENDS decimalToBinary
+add_custom_target(run   COMMAND operations
+                        DEPENDS operations
                         WORKING_DIRECTORY ${CMAKE_PROJECT_DIR})
