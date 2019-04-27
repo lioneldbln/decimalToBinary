@@ -12,9 +12,10 @@ then
     if [ "$?" -ne 0 ]
     then
         echo -e "${RED}project generation failed!${NC}"
+        cd ..
+        exit
     fi
     cd ..
-    exit
 fi
 
 cd build
