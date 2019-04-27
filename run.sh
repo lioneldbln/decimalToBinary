@@ -14,6 +14,7 @@ then
         echo -e "${RED}project generation failed!${NC}"
     fi
     cd ..
+    exit
 fi
 
 cd build
